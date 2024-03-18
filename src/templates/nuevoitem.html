@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Item</title>
+</head>
+<body>
+    <h1>Add New Item</h1>
+    <form action="/item" method="post">
+        <label for="SKU">SKU:</label><br>
+        <input type="text" id="SKU" name="SKU" required><br>
+        <label for="Name">Name:</label><br>
+        <input type="text" id="Name" name="Name" required><br>
+        <label for="Description">Description:</label><br>
+        <input type="text" id="Description" name="Description" required><br>
+        <label for="Price">Price:</label><br>
+        <input type="number" id="Price" name="Price" step="0.01" required><br>
+        <label for="Quantity">Quantity:</label><br>
+        <input type="number" id="Quantity" name="Quantity" required><br>
+        <label for="ExpirationDate">Expiration Date:</label><br>
+        <input type="text" id="ExpirationDate" name="ExpirationDate" placeholder="YYYY-MM-DD" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
